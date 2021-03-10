@@ -1,33 +1,42 @@
 {
   "project_info": {
-    "project_number": "800573400072",
-    "project_id": "hi-texi",
-    "storage_bucket": "hi-texi.appspot.com"
+    "project_number": "309654040075",
+    "firebase_url": "https://hi-texi-driver-default-rtdb.firebaseio.com",
+    "project_id": "hi-texi-driver",
+    "storage_bucket": "hi-texi-driver.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:800573400072:android:f25a06e631925ec321ddbd",
+        "mobilesdk_app_id": "1:309654040075:android:1fe368f39c76ca70bde10e",
         "android_client_info": {
           "package_name": "com.mukeshdev.hitexi"
         }
       },
       "oauth_client": [
         {
-          "client_id": "800573400072-1npg1smrbb78c1q6ilihg8fo3lngvepf.apps.googleusercontent.com",
+          "client_id": "309654040075-nbcc3ahbfl6a4mg8bf4cubtts1230n72.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mukeshdev.hitexi",
+            "certificate_hash": "de886c690178e77522c790dca8a05df118260a1d"
+          }
+        },
+        {
+          "client_id": "309654040075-h2e64ghc4ik2omltu6p1gtanpuvc1nla.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBemkacu0LBhlpsZx6avpMdfjAkktuGs7k"
+          "current_key": "AIzaSyBYQBR_6JBV2buu1-IlxYS1R788MAsbBzQ"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "800573400072-1npg1smrbb78c1q6ilihg8fo3lngvepf.apps.googleusercontent.com",
+              "client_id": "309654040075-h2e64ghc4ik2omltu6p1gtanpuvc1nla.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

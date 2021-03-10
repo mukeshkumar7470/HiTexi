@@ -49,6 +49,8 @@ public class SignupActivity extends BaseActivity {
     MediaPlayer mMediaPlayer;
     int mCurrentVideoPosition;
     FirebaseAuth auth; //FirebaseAuth Instance
+    FirebaseDatabase db;
+    DatabaseReference users;
     Button signIn, register;
     RelativeLayout rootlayout;
     TextInputEditText etemail, etname, etpassword;
@@ -62,6 +64,8 @@ public class SignupActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signup);
         auth = FirebaseAuth.getInstance();
+        db = FirebaseDatabase.getInstance();
+        users = db.getReference("Users");
         initFindView();
         clickEvents();
 
@@ -176,7 +180,7 @@ public class SignupActivity extends BaseActivity {
 
                                 } else {
                                     progress_bar.setVisibility(View.GONE);
-                                    Intent intent = new Intent(SignupActivity.this, MainActivity.class);
+                                    Intent intent = new Intent(SignupActivity.this, MapsActivity.class);
                                     startActivity(intent);
                                     finish();
                                 }
@@ -268,7 +272,7 @@ public class SignupActivity extends BaseActivity {
                                     progress_bar.setVisibility(View.GONE);
                                 } else {
                                     progress_bar.setVisibility(View.GONE);
-                                    startActivity(new Intent(SignupActivity.this, MainActivity.class));
+                                    startActivity(new Intent(SignupActivity.this, MapsActivity.class));
                                     finish();
                                 }
                             }
@@ -292,7 +296,7 @@ public class SignupActivity extends BaseActivity {
 
 
     private void nextGo() {
-        startActivity(new Intent(SignupActivity.this, MainActivity.class));
+        startActivity(new Intent(SignupActivity.this, MapsActivity.class));
         finish();
     }
 
@@ -332,7 +336,7 @@ public class SignupActivity extends BaseActivity {
         progress_bar.setVisibility(View.GONE);
         // if user logged in, go to sign-in screen
         if (auth.getCurrentUser() != null) {
-            startActivity(new Intent(this, MainActivity.class));
+            startActivity(new Intent(this, MapsActivity.class));
             finish();
         }
     }
